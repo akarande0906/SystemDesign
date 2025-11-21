@@ -6,11 +6,26 @@ I'm jumping the gun here. Here's a quick dump on Consistent Hashing and LRU Cach
 
 ## Consistent Hashing
 
-Consistent Hashing is an algorithm/technique that efficiently redestributes data when adding or removing an instance in a distributed system. A simple technique like *Simple Module Hashing* could be used to assign 
+Consistent Hashing is an algorithm/technique that efficiently redestributes data when adding or removing an instance in a distributed system. 
+
+We could use a simple module function to assign keys to a specific cache instance using the formula: $hash(key) % N $(where N is the number of instances). This works perfectly as long as we don't add/remove any instances from the distributed setup. Adding/Removing instances will result in a reallocation of most keys across instances, which is a costly overhead. 
+
+![alt text](images/SimpleHash.jpg)
+
+Consistent Hashing overcomes this issue by using a hash ring, a circular ring where instances are placed based on a hash function. When a key is to be allotted to an instance on the ring, the hash of the key is computed (using the same hash function as used for the instances) and we find the nearest instance based on the hash going clockwise (or the next nearest node with a hash key greater than the key's hash). If the hash of the key is greater than the last node on the ring, we allocate the key to the first node on the ring (hence the ring). 
+
+When a new instance is added or removed, we simply place the instance on the ring and only the keys that were previously allotted to a nearby instance, but belong to the new instance based on its placement are reallotted to the new instance. None of the other instances are affected.
+
+![alt text](images/HashingRing.jpg)
+
+There is excdllent material on the web that explains Consistent Hashing in great detail.
 
 
 ## LRU Cache
 
+Here we use a common type of Cache called the Least-recently-used Cache. The Least-recently-used (or LRU) specifies the eviction policy used to remove items when the the cache capacity is reached. In this type of cache, in the event that the capacity is reached and space needs to be made for new items, we remove the item that was least recently accessed. Access is determined based on how recently an item on the cache was added/updated or read. 
+
+![alt text](images/LRUCache.jpg)
 
 ## Setup
 

@@ -97,12 +97,12 @@ if __name__ == "__main__":
     cache_node.put_entry("key1", "value1")
     cache_node.put_entry("key2", "value2")
     cache_node.put_entry("key3", "value3")
-    print(cache_node.get_entry("key1"))  # Should print value1
+    assert(cache_node.get_entry("key1") == "value1")  # Should print value1
     print(cache_node._get_all_kv_pairs())  # Should print all key-value pairs in the cache node
     cache_node.put_entry("key4", "value4")  # This should evict key2 as it is LRU
-    print(cache_node.get_entry("key2"))  # Should print None
-    print(cache_node.get_entry("key3"))  # Should print value3
-    print(cache_node.get_entry("key4"))  # Should print value4
+    assert(cache_node.get_entry("key2") is None)  # Should print None
+    assert(cache_node.get_entry("key3") == "value3")  # Should print value3
+    assert(cache_node.get_entry("key4") == "value4")  # Should print value4
     print(cache_node._get_all_kv_pairs())  # Should print all key-value pairs in the cache node
 
 

@@ -3,8 +3,8 @@ This file is the wrapper API to invoke the Consistent Hashing Ring methods via F
 """
 from typing import List
 from flask import Flask, request
-from ConsistenHashingRing import ConsistentHashingRing
-from ConsistenHashingRingContainer import ConsistentHashingRingContainer
+from ConsistentHashingRing import ConsistentHashingRing
+from ConsistentHashingRingContainer import ConsistentHashingRingContainer
 from cache.CacheNode import CacheNode
 import logging
 

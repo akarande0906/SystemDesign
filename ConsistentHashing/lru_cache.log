@@ -1265,3 +1265,370 @@ TypeError: The view function for 'get_cache_entry' did not return a valid respon
 2025-11-20 22:59:35,761 - DEBUG - Hashed key: all to hash value: 214678880770509114818228625328870763089
 2025-11-20 22:59:35,761 - DEBUG - Getting key: all from server with instance_no: 219245463641655862076417327675415595530
 2025-11-20 22:59:35,761 - DEBUG - CacheNode 219245463641655862076417327675415595530: Getting key: all
+2025-11-21 13:51:52,866 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:51:52,867 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:51:52,867 - DEBUG - Found 'credsStore' section
+2025-11-21 13:52:39,037 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:52:39,037 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:52:39,037 - DEBUG - Found 'credsStore' section
+2025-11-21 13:52:39,064 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:52:39,065 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 13:52:39,065 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:52:39,065 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:52:39,108 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 13:52:39,112 - DEBUG - http://localhost:None "GET /v1.51/containers/900d6464aaae61e000c057823b2c735df86f4213193c520ef6f14e18129880c3/json HTTP/1.1" 200 None
+2025-11-21 13:52:39,250 - DEBUG - http://localhost:None "POST /v1.51/containers/900d6464aaae61e000c057823b2c735df86f4213193c520ef6f14e18129880c3/start HTTP/1.1" 204 0
+2025-11-21 13:52:39,251 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 13:52:39,251 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 13:52:39,251 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 13:52:39,251 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 13:52:39,314 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 13:52:39,322 - DEBUG - http://localhost:None "GET /v1.51/containers/a619e8eb9592c6fd1c10f075f1cb2b95a2e662e7daceeb3836554942032fcb18/json HTTP/1.1" 200 None
+2025-11-21 13:52:39,517 - DEBUG - http://localhost:None "POST /v1.51/containers/a619e8eb9592c6fd1c10f075f1cb2b95a2e662e7daceeb3836554942032fcb18/start HTTP/1.1" 204 0
+2025-11-21 13:52:39,518 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 13:52:39,518 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 13:52:39,521 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:52:39,521 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:52:39,521 - DEBUG - Found 'credsStore' section
+2025-11-21 13:52:39,533 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:52:39,534 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:52:39,534 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:52:39,534 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:52:39,576 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:52:39,584 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:52:39,584 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:52:39,584 - DEBUG - Found 'credsStore' section
+2025-11-21 13:52:39,598 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:52:39,598 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:52:39,599 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:52:39,599 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:52:39,637 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:52:39,639 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:52:39,640 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:52:39,640 - DEBUG - Found 'credsStore' section
+2025-11-21 13:52:39,650 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:52:39,650 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:52:39,650 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:52:39,650 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:52:39,691 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:53:50,269 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:53:50,269 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:53:50,269 - DEBUG - Found 'credsStore' section
+2025-11-21 13:53:50,303 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:53:50,303 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 13:53:50,303 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:53:50,303 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:53:50,343 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 13:53:50,348 - DEBUG - http://localhost:None "GET /v1.51/containers/e9629da77db1d775778ceac2c215a926c1b70e66867a3c0a4e07df81df3bd0fc/json HTTP/1.1" 200 None
+2025-11-21 13:53:50,492 - DEBUG - http://localhost:None "POST /v1.51/containers/e9629da77db1d775778ceac2c215a926c1b70e66867a3c0a4e07df81df3bd0fc/start HTTP/1.1" 204 0
+2025-11-21 13:53:50,492 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 13:53:50,493 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 13:53:50,493 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 13:53:50,493 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 13:53:50,556 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 13:53:50,562 - DEBUG - http://localhost:None "GET /v1.51/containers/1aaee0d01022c38dda820b0c5cdfca95627a4e81b566673f0687d3a8be0011a1/json HTTP/1.1" 200 None
+2025-11-21 13:53:50,735 - DEBUG - http://localhost:None "POST /v1.51/containers/1aaee0d01022c38dda820b0c5cdfca95627a4e81b566673f0687d3a8be0011a1/start HTTP/1.1" 204 0
+2025-11-21 13:53:50,735 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 13:53:50,736 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 13:53:50,738 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:53:50,738 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:53:50,738 - DEBUG - Found 'credsStore' section
+2025-11-21 13:53:50,768 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:53:50,768 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:53:50,768 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:53:50,768 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:53:50,810 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:53:50,822 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:53:50,822 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:53:50,822 - DEBUG - Found 'credsStore' section
+2025-11-21 13:53:50,833 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:53:50,833 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:53:50,833 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:53:50,833 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:53:50,868 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:53:50,869 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:53:50,869 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:53:50,869 - DEBUG - Found 'credsStore' section
+2025-11-21 13:53:50,881 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:53:50,881 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:53:50,881 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:53:50,881 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:53:50,926 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:55:04,924 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:55:04,924 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:55:04,925 - DEBUG - Found 'credsStore' section
+2025-11-21 13:55:04,951 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:55:04,951 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 13:55:04,951 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:55:04,951 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:55:04,984 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 13:55:04,987 - DEBUG - http://localhost:None "GET /v1.51/containers/a7a6d0c77b71c1cb90600bab61982ffe4ff100b312695705c54e5f69f618d68f/json HTTP/1.1" 200 None
+2025-11-21 13:55:05,158 - DEBUG - http://localhost:None "POST /v1.51/containers/a7a6d0c77b71c1cb90600bab61982ffe4ff100b312695705c54e5f69f618d68f/start HTTP/1.1" 204 0
+2025-11-21 13:55:05,158 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 13:55:05,159 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 13:55:05,159 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 13:55:05,159 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 13:55:05,221 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 13:55:05,226 - DEBUG - http://localhost:None "GET /v1.51/containers/16f7403ec86a9fbde4fdee273e39593cdf6f08e6aeec755c98daac9eceee87cf/json HTTP/1.1" 200 None
+2025-11-21 13:55:05,365 - DEBUG - http://localhost:None "POST /v1.51/containers/16f7403ec86a9fbde4fdee273e39593cdf6f08e6aeec755c98daac9eceee87cf/start HTTP/1.1" 204 0
+2025-11-21 13:55:05,366 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 13:55:05,366 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 13:55:05,370 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:55:05,370 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:55:05,371 - DEBUG - Found 'credsStore' section
+2025-11-21 13:55:05,380 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:55:05,380 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:55:05,380 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:55:05,380 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:55:05,430 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:55:05,439 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:55:05,439 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:55:05,440 - DEBUG - Found 'credsStore' section
+2025-11-21 13:55:05,450 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:55:05,451 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:55:05,451 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:55:05,451 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:55:05,482 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 13:55:05,484 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 13:55:05,484 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 13:55:05,484 - DEBUG - Found 'credsStore' section
+2025-11-21 13:55:05,490 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 13:55:05,490 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 13:55:05,490 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 13:55:05,490 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 13:55:05,522 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 14:00:43,632 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:00:43,632 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:00:43,633 - DEBUG - Found 'credsStore' section
+2025-11-21 14:00:43,664 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:00:43,664 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:00:43,664 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:00:43,664 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:00:43,708 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 14:00:43,713 - DEBUG - http://localhost:None "GET /v1.51/containers/6a136181e986c8ab113cdab273d9c9e8121a42c725ec023e1ab317d8d7c4df7c/json HTTP/1.1" 200 None
+2025-11-21 14:00:43,861 - DEBUG - http://localhost:None "POST /v1.51/containers/6a136181e986c8ab113cdab273d9c9e8121a42c725ec023e1ab317d8d7c4df7c/start HTTP/1.1" 204 0
+2025-11-21 14:00:43,861 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 14:00:43,861 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:00:43,861 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:00:43,861 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:00:43,941 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 14:00:43,949 - DEBUG - http://localhost:None "GET /v1.51/containers/243bc9020dd8315738897bed577642aa677ac7cb4672f8e040b40c101b41f158/json HTTP/1.1" 200 None
+2025-11-21 14:00:44,255 - DEBUG - http://localhost:None "POST /v1.51/containers/243bc9020dd8315738897bed577642aa677ac7cb4672f8e040b40c101b41f158/start HTTP/1.1" 204 0
+2025-11-21 14:00:44,261 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 14:00:44,261 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:00:44,268 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:00:44,268 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:00:44,269 - DEBUG - Found 'credsStore' section
+2025-11-21 14:00:44,280 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:00:44,281 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 14:00:44,281 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:00:44,281 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:00:44,307 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 14:00:44,316 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:00:44,316 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:00:44,316 - DEBUG - Found 'credsStore' section
+2025-11-21 14:00:44,323 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:00:44,323 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 14:00:44,323 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:00:44,323 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:00:44,366 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 14:00:44,368 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:00:44,368 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:00:44,369 - DEBUG - Found 'credsStore' section
+2025-11-21 14:00:44,388 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:00:44,388 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2', 'server3']
+2025-11-21 14:00:44,389 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:00:44,389 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:00:44,436 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 14:02:06,148 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:02:06,148 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:02:06,148 - DEBUG - Found 'credsStore' section
+2025-11-21 14:02:06,191 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:02:06,191 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:02:06,191 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:02:06,191 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:02:06,208 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 409 None
+2025-11-21 14:03:10,620 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:03:10,621 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:03:10,621 - DEBUG - Found 'credsStore' section
+2025-11-21 14:03:10,671 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:03:10,672 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:03:10,672 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:03:10,672 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:03:10,732 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 14:03:10,740 - DEBUG - http://localhost:None "GET /v1.51/containers/fbb542ad71bc191b0c8c383d477d465ab52f8a74f649899615f6dfafc091db97/json HTTP/1.1" 200 None
+2025-11-21 14:03:10,947 - DEBUG - http://localhost:None "POST /v1.51/containers/fbb542ad71bc191b0c8c383d477d465ab52f8a74f649899615f6dfafc091db97/start HTTP/1.1" 204 0
+2025-11-21 14:03:10,948 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 14:03:10,948 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:03:10,948 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:03:10,948 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:03:11,101 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 14:03:11,107 - DEBUG - http://localhost:None "GET /v1.51/containers/5b771594c3c2bb4af7709bfeb4f1f834b3ad16a105ef7f006228ceca19e74ceb/json HTTP/1.1" 200 None
+2025-11-21 14:03:11,306 - DEBUG - http://localhost:None "POST /v1.51/containers/5b771594c3c2bb4af7709bfeb4f1f834b3ad16a105ef7f006228ceca19e74ceb/start HTTP/1.1" 204 0
+2025-11-21 14:03:11,306 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 14:03:11,307 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:03:11,312 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:03:11,312 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:03:11,313 - DEBUG - Found 'credsStore' section
+2025-11-21 14:03:11,325 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:03:11,326 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:03:11,326 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:03:11,326 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:03:11,475 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 201 None
+2025-11-21 14:03:11,483 - DEBUG - http://localhost:None "GET /v1.51/containers/5c6c161c48378f489cb16b9b47877e608b80932adf317bffe753d096dde4713f/json HTTP/1.1" 200 None
+2025-11-21 14:03:11,645 - DEBUG - http://localhost:None "POST /v1.51/containers/5c6c161c48378f489cb16b9b47877e608b80932adf317bffe753d096dde4713f/start HTTP/1.1" 500 None
+2025-11-21 14:03:11,660 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:03:11,661 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:03:11,661 - DEBUG - Found 'credsStore' section
+2025-11-21 14:03:11,674 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:03:11,675 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:03:11,675 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:03:11,675 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:03:11,714 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:03:11,717 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:03:11,717 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:03:11,717 - DEBUG - Found 'credsStore' section
+2025-11-21 14:03:11,723 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:03:11,724 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:03:11,724 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:03:11,724 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:03:11,764 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:09:26,248 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:09:26,249 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:09:26,249 - DEBUG - Found 'credsStore' section
+2025-11-21 14:09:26,304 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:09:26,304 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:09:26,304 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:09:26,304 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:09:26,380 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 14:09:26,389 - DEBUG - http://localhost:None "GET /v1.51/containers/5c3a0cbfdada353675727a83c693b4f2342db3f01fb845c98659cde274f48155/json HTTP/1.1" 200 None
+2025-11-21 14:09:26,602 - DEBUG - http://localhost:None "POST /v1.51/containers/5c3a0cbfdada353675727a83c693b4f2342db3f01fb845c98659cde274f48155/start HTTP/1.1" 204 0
+2025-11-21 14:09:26,603 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 14:09:26,603 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:09:26,603 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:09:26,603 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:09:26,709 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 14:09:26,728 - DEBUG - http://localhost:None "GET /v1.51/containers/cc6bb005bde9d4e41ccb13225e2086c96333373cca4b8de8b5644dcb41b29659/json HTTP/1.1" 200 None
+2025-11-21 14:09:26,977 - DEBUG - http://localhost:None "POST /v1.51/containers/cc6bb005bde9d4e41ccb13225e2086c96333373cca4b8de8b5644dcb41b29659/start HTTP/1.1" 204 0
+2025-11-21 14:09:26,978 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 14:09:26,978 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:09:26,982 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:09:26,982 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:09:26,983 - DEBUG - Found 'credsStore' section
+2025-11-21 14:09:26,992 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:09:26,992 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:09:26,992 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:09:26,992 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:09:27,167 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 201 None
+2025-11-21 14:09:27,173 - DEBUG - http://localhost:None "GET /v1.51/containers/b69b9f476e0f9fcd38ce0aff5778b25e4a70fa0f3669c8d51d7d2c28fb0da5b0/json HTTP/1.1" 200 None
+2025-11-21 14:09:27,403 - DEBUG - http://localhost:None "POST /v1.51/containers/b69b9f476e0f9fcd38ce0aff5778b25e4a70fa0f3669c8d51d7d2c28fb0da5b0/start HTTP/1.1" 500 None
+2025-11-21 14:09:27,414 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:09:27,414 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:09:27,414 - DEBUG - Found 'credsStore' section
+2025-11-21 14:09:27,422 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:09:27,422 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:09:27,422 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:09:27,422 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:09:27,517 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:09:27,520 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:09:27,520 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:09:27,520 - DEBUG - Found 'credsStore' section
+2025-11-21 14:09:27,531 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:09:27,532 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:09:27,532 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:09:27,532 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:09:27,579 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:11:02,432 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:11:02,433 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:11:02,433 - DEBUG - Found 'credsStore' section
+2025-11-21 14:11:02,492 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:11:02,492 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['server1', 'server2']
+2025-11-21 14:11:02,492 - DEBUG - Adding Server: server1 to the hash ring
+2025-11-21 14:11:02,492 - DEBUG - Adding parent node with hash: 53115666678760155327043932525405272078 for server: server1-0
+2025-11-21 14:11:02,528 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server1 HTTP/1.1" 201 None
+2025-11-21 14:11:02,532 - DEBUG - http://localhost:None "GET /v1.51/containers/4b556b6b0ff5be505751562764e3459cfa10779bdeedd86e70f5043c051769fe/json HTTP/1.1" 200 None
+2025-11-21 14:11:02,685 - DEBUG - http://localhost:None "POST /v1.51/containers/4b556b6b0ff5be505751562764e3459cfa10779bdeedd86e70f5043c051769fe/start HTTP/1.1" 204 0
+2025-11-21 14:11:02,686 - INFO - Created container for CacheNode 53115666678760155327043932525405272078
+2025-11-21 14:11:02,686 - DEBUG - Adding virtual node with hash: 193012283215982576351218359333807155196 for server: server1-1
+2025-11-21 14:11:02,686 - DEBUG - Adding Server: server2 to the hash ring
+2025-11-21 14:11:02,686 - DEBUG - Adding parent node with hash: 219245463641655862076417327675415595530 for server: server2-0
+2025-11-21 14:11:02,815 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-server2 HTTP/1.1" 201 None
+2025-11-21 14:11:02,828 - DEBUG - http://localhost:None "GET /v1.51/containers/c69f5a3c45f2712d97ac75f910e2e1cc6ca267d6ef47653c6eb305dc589d93e5/json HTTP/1.1" 200 None
+2025-11-21 14:11:03,008 - DEBUG - http://localhost:None "POST /v1.51/containers/c69f5a3c45f2712d97ac75f910e2e1cc6ca267d6ef47653c6eb305dc589d93e5/start HTTP/1.1" 204 0
+2025-11-21 14:11:03,008 - INFO - Created container for CacheNode 219245463641655862076417327675415595530
+2025-11-21 14:11:03,008 - DEBUG - Adding virtual node with hash: 207254854758286617238972537152465528696 for server: server2-1
+2025-11-21 14:11:03,011 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:11:03,011 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:11:03,011 - DEBUG - Found 'credsStore' section
+2025-11-21 14:11:03,060 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:11:03,061 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:11:03,061 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:11:03,061 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:11:03,181 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 201 None
+2025-11-21 14:11:03,199 - DEBUG - http://localhost:None "GET /v1.51/containers/baac89a69c6d98aa526147bf1ee4f93c4a84b184093709cc4eda298e32b81435/json HTTP/1.1" 200 None
+2025-11-21 14:11:03,400 - DEBUG - http://localhost:None "POST /v1.51/containers/baac89a69c6d98aa526147bf1ee4f93c4a84b184093709cc4eda298e32b81435/start HTTP/1.1" 500 None
+2025-11-21 14:11:03,412 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:11:03,412 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:11:03,413 - DEBUG - Found 'credsStore' section
+2025-11-21 14:11:03,422 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:11:03,423 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:11:03,423 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:11:03,423 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:11:03,450 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:11:03,451 - DEBUG - Trying paths: ['/Users/alokkarande/.docker/config.json', '/Users/alokkarande/.dockercfg']
+2025-11-21 14:11:03,451 - DEBUG - Found file at path: /Users/alokkarande/.docker/config.json
+2025-11-21 14:11:03,451 - DEBUG - Found 'credsStore' section
+2025-11-21 14:11:03,460 - DEBUG - http://localhost:None "GET /version HTTP/1.1" 200 None
+2025-11-21 14:11:03,461 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['cachenode1', 'cachenode2', 'cachenode3']
+2025-11-21 14:11:03,461 - DEBUG - Adding Server: cachenode1 to the hash ring
+2025-11-21 14:11:03,461 - DEBUG - Adding parent node with hash: 157841575151587536317459080494933532981 for server: cachenode1-0
+2025-11-21 14:11:03,485 - DEBUG - http://localhost:None "POST /v1.51/containers/create?name=lru-cache-cachenode1 HTTP/1.1" 409 None
+2025-11-21 14:12:17,444 - DEBUG - Initializing Consistent Hashing Ring. Adding Servers: ['svr1', 'svr2']
+2025-11-21 14:12:17,444 - DEBUG - Adding Server: svr1 to the hash ring
+2025-11-21 14:12:17,444 - DEBUG - Adding parent node with hash: 30802795780265302013922104528898190797 for server: svr1-0
+2025-11-21 14:12:17,444 - DEBUG - Adding virtual node with hash: 321308769124460375687238006040174617173 for server: svr1-1
+2025-11-21 14:12:17,444 - DEBUG - Adding Server: svr2 to the hash ring
+2025-11-21 14:12:17,444 - DEBUG - Adding parent node with hash: 146099403551987027261102285468707456717 for server: svr2-0
+2025-11-21 14:12:17,444 - DEBUG - Adding virtual node with hash: 211642168580430258468592065987174493990 for server: svr2-1
+2025-11-21 14:12:17,444 - DEBUG - Adding Server: svr22 to the hash ring
+2025-11-21 14:12:17,444 - DEBUG - Adding parent node with hash: 152120530118357779502318276268814054576 for server: svr22-0
+2025-11-21 14:12:17,444 - DEBUG - Adding virtual node with hash: 21255342823804253882270867922498541096 for server: svr22-1
+2025-11-21 14:12:17,444 - DEBUG - Hashed key: key1 to hash value: 258772850759514212175119384033924506317
+2025-11-21 14:12:17,444 - DEBUG - Putting key: key1 into server with instance_no: 30802795780265302013922104528898190797
+2025-11-21 14:12:17,444 - DEBUG - CacheNode 30802795780265302013922104528898190797: Putting key: key1
+2025-11-21 14:12:17,444 - DEBUG - Hashed key: key2 to hash value: 160795813082586690235759048260910463706
+2025-11-21 14:12:17,444 - DEBUG - Putting key: key2 into server with instance_no: 146099403551987027261102285468707456717
+2025-11-21 14:12:17,444 - DEBUG - CacheNode 146099403551987027261102285468707456717: Putting key: key2
+2025-11-21 14:12:17,444 - DEBUG - Hashed key: key31 to hash value: 65707366741127233990149780775413000393
+2025-11-21 14:12:17,444 - DEBUG - Putting key: key31 into server with instance_no: 146099403551987027261102285468707456717
+2025-11-21 14:12:17,444 - DEBUG - CacheNode 146099403551987027261102285468707456717: Putting key: key31
+2025-11-21 14:12:17,444 - DEBUG - Hashed key: key21 to hash value: 12746522061713916938058575529209660999
+2025-11-21 14:12:17,444 - DEBUG - Putting key: key21 into server with instance_no: 152120530118357779502318276268814054576
+2025-11-21 14:12:17,444 - DEBUG - CacheNode 152120530118357779502318276268814054576: Putting key: key21
+2025-11-21 14:12:17,444 - DEBUG - Hashed key: all to hash value: 214678880770509114818228625328870763089
+2025-11-21 14:12:17,444 - DEBUG - Putting key: all into server with instance_no: 30802795780265302013922104528898190797
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 30802795780265302013922104528898190797: Putting key: all
+2025-11-21 14:12:17,445 - DEBUG - Hashed key: key1 to hash value: 258772850759514212175119384033924506317
+2025-11-21 14:12:17,445 - DEBUG - Getting key: key1 from server with instance_no: 30802795780265302013922104528898190797
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 30802795780265302013922104528898190797: Getting key: key1
+2025-11-21 14:12:17,445 - DEBUG - Hashed key: key2 to hash value: 160795813082586690235759048260910463706
+2025-11-21 14:12:17,445 - DEBUG - Getting key: key2 from server with instance_no: 146099403551987027261102285468707456717
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 146099403551987027261102285468707456717: Getting key: key2
+2025-11-21 14:12:17,445 - DEBUG - Hashed key: key31 to hash value: 65707366741127233990149780775413000393
+2025-11-21 14:12:17,445 - DEBUG - Getting key: key31 from server with instance_no: 146099403551987027261102285468707456717
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 146099403551987027261102285468707456717: Getting key: key31
+2025-11-21 14:12:17,445 - DEBUG - Hashed key: key21 to hash value: 12746522061713916938058575529209660999
+2025-11-21 14:12:17,445 - DEBUG - Getting key: key21 from server with instance_no: 152120530118357779502318276268814054576
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 152120530118357779502318276268814054576: Getting key: key21
+2025-11-21 14:12:17,445 - DEBUG - Hashed key: all to hash value: 214678880770509114818228625328870763089
+2025-11-21 14:12:17,445 - DEBUG - Getting key: all from server with instance_no: 30802795780265302013922104528898190797
+2025-11-21 14:12:17,445 - DEBUG - CacheNode 30802795780265302013922104528898190797: Getting key: all
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Putting key: key1
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Putting key: key2
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Putting key: key3
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key1
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Putting key: key4
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Cache size exceeded. Evicting least recently used key: key2
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key2
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key3
+2025-11-21 14:13:32,613 - DEBUG - CacheNode 1: Getting key: key4
